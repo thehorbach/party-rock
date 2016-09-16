@@ -74,7 +74,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QcC-gM-D0U">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="85" id="BnO-KW-gse">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PartyCell" rowHeight="85" id="BnO-KW-gse" customClass="PartyCell" customModule="party_rock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BnO-KW-gse" id="xlr-mG-Py4">
@@ -87,7 +87,7 @@
                                                         <constraint firstAttribute="width" constant="68" id="iuL-7X-mwm"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sung goes down!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oL-dC-6Z6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where the sun goes down!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oL-dC-6Z6">
                                                     <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -103,6 +103,10 @@
                                                 <constraint firstItem="flC-9n-t73" firstAttribute="centerY" secondItem="xlr-mG-Py4" secondAttribute="centerY" id="X2A-BF-xHU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="previewImageView" destination="flC-9n-t73" id="tPW-MQ-1Y1"/>
+                                            <outlet property="previewTitleLabel" destination="1oL-dC-6Z6" id="QyT-ho-7f4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -122,6 +126,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="QcC-gM-D0U" id="jwB-LD-0MK"/>
                         <segue destination="dOf-g7-B6g" kind="showDetail" identifier="videoVC" id="DD9-dY-hOj"/>
                     </connections>
                 </viewController>

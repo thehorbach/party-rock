@@ -14,6 +14,8 @@
 		11595B911D8C1EE300407111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11595B8F1D8C1EE300407111 /* LaunchScreen.storyboard */; };
 		11595B9D1D8C271000407111 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11595B9C1D8C271000407111 /* still time.ttf */; };
 		11595BA01D8C283700407111 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11595B9F1D8C283700407111 /* VideoVC.swift */; };
+		11595BA21D8C2CBE00407111 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11595BA11D8C2CBE00407111 /* PartyCell.swift */; };
+		11595BA41D8C43E600407111 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11595BA31D8C43E600407111 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		11595B921D8C1EE300407111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11595B9C1D8C271000407111 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		11595B9F1D8C283700407111 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		11595BA11D8C2CBE00407111 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		11595BA31D8C43E600407111 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		11595B981D8C215600407111 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				11595BA31D8C43E600407111 /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 		11595B991D8C215B00407111 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11595BA11D8C2CBE00407111 /* PartyCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -178,6 +184,8 @@
 			files = (
 				11595BA01D8C283700407111 /* VideoVC.swift in Sources */,
 				11595B891D8C1EE300407111 /* MainVC.swift in Sources */,
+				11595BA41D8C43E600407111 /* PartyRock.swift in Sources */,
+				11595BA21D8C2CBE00407111 /* PartyCell.swift in Sources */,
 				11595B871D8C1EE300407111 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
